@@ -22,3 +22,25 @@ var queen = function(startX, startY, endX, endY) {
     return false;
   }
 };
+
+$(document).ready(function() {
+
+  $("form#queen").submit(function(event) {
+    //$(".not").remove();
+    var startX = parseInt($("input#start-x").val());
+    var startY = parseInt($("input#start-y").val());
+
+    $(".attack-x").text(startX);
+    // if (!result) {
+    // $(".not").text("not");
+    // }
+    // else{
+    //   $(".not").text("");
+    // 
+    // }
+
+    $("#result").show();
+
+    event.preventDefault();
+  });
+});

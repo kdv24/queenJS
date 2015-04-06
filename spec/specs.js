@@ -21,8 +21,8 @@ $(document).ready(function() {
 
   $("form#queen").submit(function(event) {
     //$(".not").remove();
-    var year = parseInt($("input#year").val());
-    var result = leapYear(year);
+    var startX = parseInt($("input#start-x").val());
+    var startY = parseInt($("input#start-y").val());
 
     $(".year").text(year);
     if (!result) {
