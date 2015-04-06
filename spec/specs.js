@@ -11,4 +11,30 @@ describe('queen', function() {
   it('is true if the relationship between the x and y at the start is the same as the x and y at the end', function() {
     expect(queen(1,5,2,6)).to.equal(true);
   });
+  it('is true if the start x and y equals the end x and y', function() {
+    expect(queen(5,2,1,6)).to.equal(true);
+  });
+});
+
+
+$(document).ready(function() {
+
+  $("form#queen").submit(function(event) {
+    //$(".not").remove();
+    var year = parseInt($("input#year").val());
+    var result = leapYear(year);
+
+    $(".year").text(year);
+    if (!result) {
+    $(".not").text("not");
+    }
+    else{
+      $(".not").text("");
+
+    }
+
+    $("#result").show();
+
+    event.preventDefault();
+  });
 });
