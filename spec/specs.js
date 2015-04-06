@@ -8,5 +8,7 @@ describe('queen', function() {
   it('is true if the y coordinates in the begining and end are the same, but the x are not', function() {
     expect(queen(1,3,2,3)).to.equal(true);
   });
-  it('is true if the ')
+  it('is true if the relationship between the x and y at the start is the same as the x and y at the end', function() {
+    expect(queen(1,5,2,6)).to.equal(true);
+  });
 });
