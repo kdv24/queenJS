@@ -25,19 +25,16 @@ var queen = function(startX, startY, endX, endY) {
 
 $(document).ready(function() {
 
-  $("form#queen").submit(function(event) {
+  $("form#queen-attack").submit(function(event) {
     //$(".not").remove();
     var startX = parseInt($("input#start-x").val());
     var startY = parseInt($("input#start-y").val());
+    var endX = parseInt($("input#end-x").val());
+    var endY = parseInt($("input#end-y").val());
 
-    $(".attack-x").text(startX);
-    // if (!result) {
-    // $(".not").text("not");
-    // }
-    // else{
-    //   $(".not").text("");
-    // 
-    // }
+    var result = queen(startX, startY, endX, endY);
+
+    
 
     $("#result").show();
 

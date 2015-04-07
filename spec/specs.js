@@ -15,26 +15,3 @@ describe('queen', function() {
     expect(queen(5,2,1,6)).to.equal(true);
   });
 });
-
-
-$(document).ready(function() {
-
-  $("form#queen").submit(function(event) {
-    //$(".not").remove();
-    var startX = parseInt($("input#start-x").val());
-    var startY = parseInt($("input#start-y").val());
-
-    $(".year").text(year);
-    if (!result) {
-    $(".not").text("not");
-    }
-    else{
-      $(".not").text("");
-
-    }
-
-    $("#result").show();
-
-    event.preventDefault();
-  });
-});
