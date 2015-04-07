@@ -34,8 +34,8 @@ $(document).ready(function() {
 
     var result = queen(startX, startY, endX, endY);
 
-    $(".")
-    if(!queen) {
+
+    if(!result) {
       $(".not").text("not");
     }
     else {
