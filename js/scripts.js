@@ -34,7 +34,13 @@ $(document).ready(function() {
 
     var result = queen(startX, startY, endX, endY);
 
-    
+    $(".")
+    if(!queen) {
+      $(".not").text("not");
+    }
+    else {
+      $(".not").text("");
+    }
 
     $("#result").show();
 
